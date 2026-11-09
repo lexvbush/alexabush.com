@@ -3,15 +3,18 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Alexa Bush — Symbolic Digital Media</title>
-<meta name="description" content="Alexa Bush writes and produces symbolic digital media: collage, portraiture and art direction.">
-<meta property="og:title" content="Alexa Bush — Symbolic Digital Media">
-<meta property="og:description" content="Collage, portraiture and art direction.">
+<title>Alexa Bush — Creative Direction</title>
+<meta name="description" content="Alexa Bush brings creative expression to purpose-driven brands. Art direction, brand design and consultation.">
+<meta property="og:title" content="Alexa Bush — Creative Direction">
+<meta property="og:description" content="Creative expression for purpose-driven brands.">
 <meta property="og:image" content="https://alexabush.com/images/halo-sm.jpg">
 <meta name="theme-color" content="#07060a">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="favicon.png" type="image/png" sizes="64x64">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Syne:wght@500;700;800&family=Cormorant+Garamond:ital,wght@1,300;1,400;1,500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@500;600&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
 :root{
   --ink:#07060a;
@@ -43,7 +46,7 @@ body::after{content:"";position:fixed;inset:-50%;pointer-events:none;z-index:50;
 /* nav */
 .nav{position:fixed;top:0;left:0;right:0;z-index:40;display:flex;justify-content:space-between;align-items:center;
   padding:18px clamp(16px,4vw,48px);mix-blend-mode:difference}
-.nav .mark{font-family:var(--display);font-weight:800;letter-spacing:.02em;font-size:15px;text-decoration:none}
+.nav .mark{font-family:var(--serif);font-style:italic;font-weight:500;font-size:24px;text-decoration:none;line-height:1}
 .nav ul{list-style:none;display:flex;gap:clamp(14px,3vw,32px);font-size:13px;letter-spacing:.14em;text-transform:uppercase}
 .nav a{text-decoration:none}
 
@@ -60,10 +63,11 @@ body::after{content:"";position:fixed;inset:-50%;pointer-events:none;z-index:50;
   mix-blend-mode:normal}
 .hero__copy{padding:0 clamp(16px,4vw,48px) clamp(40px,8vh,88px);width:100%}
 .kicker{font-family:var(--serif);font-style:italic;font-size:clamp(20px,2.6vw,32px);color:var(--acid);margin-bottom:.4em}
-.giant{font-family:var(--display);font-weight:800;line-height:.82;letter-spacing:-.045em;text-transform:uppercase;
-  font-size:clamp(68px,17vw,280px)}
+.giant{font-family:var(--serif);font-weight:300;line-height:.84;letter-spacing:-.035em;
+  font-size:clamp(84px,19vw,320px)}
 .giant span{display:block}
 .giant .outline{color:var(--paper);text-shadow:0 0 60px rgba(255,61,203,.35)}
+.giant .chrome{font-style:italic;font-weight:400;padding-left:.32em;padding-right:.08em}
 .giant .chrome{background:linear-gradient(100deg,var(--aqua),var(--violet) 30%,var(--magenta) 55%,var(--amber) 78%,var(--acid));
   -webkit-background-clip:text;background-clip:text;color:transparent;background-size:200% 100%;animation:sheen 8s linear infinite}
 @keyframes sheen{to{background-position:200% 0}}
@@ -76,14 +80,15 @@ body::after{content:"";position:fixed;inset:-50%;pointer-events:none;z-index:50;
 /* marquee */
 .marquee{border-block:1px solid var(--line);overflow:hidden;padding:18px 0;background:var(--acid);color:var(--ink)}
 .marquee__track{display:flex;width:max-content;animation:scroll 28s linear infinite}
-.marquee span{font-family:var(--display);font-weight:800;text-transform:uppercase;font-size:clamp(22px,3.4vw,44px);letter-spacing:-.01em;padding-right:.6em;white-space:nowrap}
-.marquee em{font-family:var(--serif);font-weight:400;text-transform:none;font-size:1.1em;padding-right:.6em}
+.marquee span{font-family:var(--serif);font-style:italic;font-weight:500;font-size:clamp(26px,3.8vw,50px);letter-spacing:-.01em;padding-right:.6em;white-space:nowrap}
+.marquee em{font-style:normal;font-size:.7em;padding-right:.6em;align-self:center}
 @keyframes scroll{to{transform:translateX(-50%)}}
 
 /* statement */
 .statement{padding:clamp(88px,16vh,180px) clamp(16px,4vw,48px);max-width:1400px;margin:0 auto;position:relative}
 .statement p{font-family:var(--serif);font-weight:300;font-size:clamp(34px,6.2vw,96px);line-height:1.02;letter-spacing:-.01em}
-.statement p b{font-family:var(--display);font-weight:800;font-style:normal;letter-spacing:-.04em;text-transform:uppercase;font-size:.82em}
+.statement p b{font-weight:500}
+.statement .label{font-family:var(--display);font-weight:500;font-size:13px;letter-spacing:.2em;text-transform:uppercase;color:var(--acid);margin-bottom:28px}
 .statement .hl{background:linear-gradient(90deg,var(--magenta),var(--amber));-webkit-background-clip:text;background-clip:text;color:transparent}
 .statement .hl2{background:linear-gradient(90deg,var(--aqua),var(--acid));-webkit-background-clip:text;background-clip:text;color:transparent}
 .orb{position:absolute;width:42vmin;height:42vmin;border-radius:50%;filter:blur(60px);opacity:.5;z-index:-1;
@@ -93,7 +98,8 @@ body::after{content:"";position:fixed;inset:-50%;pointer-events:none;z-index:50;
 /* work */
 .work{padding:0 clamp(16px,4vw,48px) clamp(80px,12vh,140px)}
 .work__head{display:flex;justify-content:space-between;align-items:end;gap:20px;border-bottom:1px solid var(--line);padding-bottom:18px;margin-bottom:clamp(28px,5vh,56px)}
-.work__head h2{font-family:var(--display);font-weight:800;text-transform:uppercase;letter-spacing:-.04em;font-size:clamp(44px,8vw,120px);line-height:.85}
+.work__head h2{font-family:var(--serif);font-weight:300;letter-spacing:-.03em;font-size:clamp(52px,9vw,140px);line-height:.85}
+.work__head h2 i{background:linear-gradient(90deg,var(--aqua),var(--magenta));-webkit-background-clip:text;background-clip:text;color:transparent}
 .work__head p{font-size:13px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);text-align:right}
 .grid{display:grid;grid-template-columns:repeat(12,1fr);gap:clamp(12px,2vw,28px)}
 .plate{position:relative;cursor:zoom-in;overflow:hidden;border-radius:4px;background:#111;
@@ -108,15 +114,18 @@ body::after{content:"";position:fixed;inset:-50%;pointer-events:none;z-index:50;
 .p2{grid-column:8 / span 5;aspect-ratio:3/4;margin-top:22%}
 .p3{grid-column:2 / span 5;aspect-ratio:3/4;margin-top:-6%}
 .p4{grid-column:7 / span 6;aspect-ratio:3/4;margin-top:10%}
-.plate .num{position:absolute;top:14px;left:16px;font-family:var(--display);font-weight:800;font-size:13px;letter-spacing:.1em;mix-blend-mode:difference}
+.plate .num{position:absolute;top:14px;left:16px;font-family:var(--display);font-weight:600;font-size:13px;letter-spacing:.1em;mix-blend-mode:difference}
 
 /* disciplines */
 .disc{padding:clamp(60px,10vh,120px) clamp(16px,4vw,48px);border-top:1px solid var(--line)}
 .disc ul{list-style:none;max-width:1400px;margin:0 auto}
 .disc li{display:flex;justify-content:space-between;align-items:baseline;gap:20px;border-bottom:1px solid var(--line);padding:clamp(14px,2.4vh,26px) 0;
-  font-family:var(--display);font-weight:700;text-transform:uppercase;letter-spacing:-.03em;font-size:clamp(28px,5.4vw,76px);line-height:1;transition:color .4s,padding-left .5s}
-.disc li small{font-family:var(--serif);font-style:italic;font-weight:400;text-transform:none;letter-spacing:0;font-size:clamp(16px,1.6vw,22px);color:var(--muted)}
+  font-family:var(--serif);font-weight:300;letter-spacing:-.02em;font-size:clamp(40px,7vw,104px);line-height:1;transition:color .4s,padding-left .5s}
+.disc li .n{font-family:var(--display);font-weight:500;font-size:13px;letter-spacing:.16em;color:var(--acid);margin-right:clamp(12px,2vw,28px);vertical-align:super}
+.disc h2{max-width:1400px;margin:0 auto 18px;font-family:var(--display);font-weight:500;font-size:13px;letter-spacing:.2em;text-transform:uppercase;color:var(--muted)}
+.disc li small{font-family:var(--sans);font-weight:300;font-size:clamp(14px,1.2vw,17px);color:var(--muted);max-width:34ch;text-align:right;line-height:1.5}
 .disc li:hover{color:var(--acid);padding-left:18px}
+.disc li:hover i{color:var(--acid)}
 
 /* contact */
 .contact{position:relative;overflow:hidden;padding:clamp(100px,18vh,200px) clamp(16px,4vw,48px) 40px;text-align:center;isolation:isolate}
@@ -125,9 +134,11 @@ body::after{content:"";position:fixed;inset:-50%;pointer-events:none;z-index:50;
 .contact::after{content:"";position:absolute;inset:0;z-index:-1;background:radial-gradient(ellipse at center,rgba(7,6,10,.15),rgba(7,6,10,.9) 75%)}
 @keyframes spin{to{transform:rotate(360deg)}}
 .contact .kicker{color:var(--paper)}
-.contact h2{font-family:var(--display);font-weight:800;text-transform:uppercase;letter-spacing:-.05em;line-height:.84;font-size:clamp(56px,13vw,210px)}
+.contact h2{font-family:var(--serif);font-weight:300;letter-spacing:-.035em;line-height:.9;font-size:clamp(54px,11vw,180px);padding-bottom:.08em}
+.contact h2 i{font-weight:400}
+.contact .sub{max-width:52ch;margin:24px auto 0;color:var(--paper);opacity:.85;font-size:clamp(16px,1.4vw,19px)}
 .cta{display:inline-flex;align-items:center;gap:14px;margin-top:clamp(28px,5vh,48px);padding:20px 34px;border-radius:999px;
-  background:var(--paper);color:var(--ink);text-decoration:none;font-family:var(--display);font-weight:700;text-transform:uppercase;letter-spacing:.06em;font-size:15px;
+  background:var(--paper);color:var(--ink);text-decoration:none;font-family:var(--display);font-weight:600;text-transform:uppercase;letter-spacing:.1em;font-size:14px;
   transition:transform .3s,background .3s}
 .cta:hover{transform:translateY(-3px) rotate(-1deg);background:var(--acid)}
 .cta svg{width:20px;height:20px}
@@ -150,7 +161,8 @@ footer{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;margin
   .p1,.p2,.p3,.p4{grid-column:auto;margin-top:0}
   .work__head{flex-direction:column;align-items:start}
   .work__head p{text-align:left}
-  .disc li{flex-direction:column;align-items:start;gap:6px}
+  .disc li{flex-direction:column;align-items:start;gap:10px}
+  .disc li small{text-align:left}
 }
 @media (prefers-reduced-motion:reduce){
   *,*::before,*::after{animation:none!important;transition:none!important}
@@ -163,41 +175,39 @@ footer{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;margin
 <div class="glow" aria-hidden="true"></div>
 
 <nav class="nav" aria-label="Main">
-  <a class="mark" href="#top">A—B</a>
+  <a class="mark" href="#top">ab</a>
   <ul>
-    <li><a href="#statement">About</a></li>
     <li><a href="#work">Work</a></li>
-    <li><a href="#contact">Contact</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#contact">Hire</a></li>
   </ul>
 </nav>
 
 <header class="hero" id="top">
   <div class="hero__img"><img src="images/halo.jpg" alt="Portrait of Alexa Bush inside an iridescent bubble against a green hillside" fetchpriority="high"></div>
   <div class="hero__copy">
-    <p class="kicker">symbolic digital media</p>
+    <p class="kicker">creative direction for purpose-driven brands</p>
     <h1 class="giant"><span class="outline">Alexa</span><span class="chrome">Bush</span></h1>
     <div class="hero__meta">
-      <span>Collage · Portraiture · Art Direction</span>
+      <span>Art Direction · Brand Design · Consultation</span>
       <span class="scroll-cue">Enter <i></i></span>
     </div>
   </div>
 </header>
 
 <div class="marquee" aria-hidden="true">
-  <div class="marquee__track">
-    <span>Another world is possible</span><em>✶</em><span>Digital collage</span><em>✶</em><span>Art direction</span><em>✶</em><span>Photography</span><em>✶</em><span>Symbolic media</span><em>✶</em>
-    <span>Another world is possible</span><em>✶</em><span>Digital collage</span><em>✶</em><span>Art direction</span><em>✶</em><span>Photography</span><em>✶</em><span>Symbolic media</span><em>✶</em>
-  </div>
+  <div class="marquee__track"><span>Creative expression</span><em>✶</em><span>Purpose-driven brands</span><em>✶</em><span>Art direction</span><em>✶</em><span>Brand design</span><em>✶</em><span>Consultation</span><em>✶</em><span>Creative expression</span><em>✶</em><span>Purpose-driven brands</span><em>✶</em><span>Art direction</span><em>✶</em><span>Brand design</span><em>✶</em><span>Consultation</span><em>✶</em></div>
 </div>
 
-<section class="statement" id="statement">
+<section class="statement" id="about">
   <div class="orb" aria-hidden="true"></div>
-  <p>I <b>write</b> and <b>produce</b> <i class="hl">symbolic</i> digital media: images that hold a <i class="hl2">feeling</i> before they hold a meaning.</p>
+  <p class="label">The mission</p>
+  <p>I bring <i class="hl">creative expression</i> to <i class="hl2">purpose-driven</i> brands, so what you stand for is felt before it is explained.</p>
 </section>
 
 <section class="work" id="work">
   <div class="work__head">
-    <h2>Selected<br>Work</h2>
+    <h2>Selected<br><i>work</i></h2>
     <p>Plates I — IV<br>Click to enlarge</p>
   </div>
   <div class="grid">
@@ -224,21 +234,22 @@ footer{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;margin
   </div>
 </section>
 
-<section class="disc" aria-label="Disciplines">
+<section class="disc" id="services" aria-labelledby="svc">
+  <h2 id="svc">Consulting services</h2>
   <ul>
-    <li>Digital Collage <small>layered, textual, dreamlike</small></li>
-    <li>Portraiture <small>light, color, presence</small></li>
-    <li>Art Direction <small>for brands with a soul</small></li>
-    <li>Graphic Design <small>print and screen</small></li>
+    <li><span><span class="n">01</span>Art Direction</span><small>Visual concepts, shoots and campaigns that carry your message with feeling.</small></li>
+    <li><span><span class="n">02</span>Brand Design</span><small>Identity, palette, typography and imagery built from your purpose outward.</small></li>
+    <li><span><span class="n">03</span>Consultation</span><small>Creative strategy sessions to sharpen how your brand looks, speaks and moves.</small></li>
   </ul>
 </section>
 
 <section class="contact" id="contact">
-  <p class="kicker">commissions &amp; collaborations</p>
-  <h2>Let’s make<br>something</h2>
+  <p class="kicker">available for consulting</p>
+  <h2>Let’s make<br><i>something</i></h2>
+  <p class="sub">Working with a purpose-driven brand that wants to be felt? Let’s talk about your project.</p>
   <a class="cta" href="https://www.instagram.com/lexvbush/" target="_blank" rel="noopener">
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>
-    Message me on Instagram
+    Inquire on Instagram
   </a>
   <footer>
     <span>© 2026 Alexa Bush</span>

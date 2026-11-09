@@ -114,11 +114,13 @@ body::after{content:"";position:fixed;inset:-50%;pointer-events:none;z-index:50;
 .disc{padding:clamp(60px,10vh,120px) clamp(16px,4vw,48px);border-top:1px solid var(--line)}
 .disc ul{list-style:none;max-width:1400px;margin:0 auto}
 .disc li{display:flex;justify-content:space-between;align-items:baseline;gap:20px;border-bottom:1px solid var(--line);padding:clamp(14px,2.4vh,26px) 0;
-  font-family:var(--serif);font-weight:300;letter-spacing:-.02em;font-size:clamp(34px,5.4vw,84px);line-height:1.05;transition:color .4s,padding-left .5s}
+  font-family:var(--serif);font-weight:300;letter-spacing:-.02em;font-size:clamp(34px,5.4vw,84px);line-height:1.05;transition:color .4s}
 .disc li .n{font-family:var(--display);font-weight:500;font-size:13px;letter-spacing:.16em;color:var(--acid);margin-right:clamp(12px,2vw,28px);vertical-align:super}
 .disc h2{max-width:1400px;margin:0 auto 18px;font-family:var(--display);font-weight:500;font-size:13px;letter-spacing:.2em;text-transform:uppercase;color:var(--muted)}
 .disc li small{font-family:var(--sans);font-weight:300;letter-spacing:0;font-size:clamp(14px,1.2vw,17px);color:var(--muted);max-width:34ch;text-align:right;line-height:1.5}
-.disc li:hover{color:var(--acid);padding-left:18px}
+.disc li:hover{color:var(--acid)}
+.disc li > span{display:inline-block;transition:transform .5s cubic-bezier(.2,.7,.2,1)}
+.disc li:hover > span{transform:translateX(18px)}
 .disc li:hover i{color:var(--acid)}
 
 /* contact */
